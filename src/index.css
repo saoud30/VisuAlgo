@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 219 28% 7%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 222 84% 4.9%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 212 26% 83%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-glass-white backdrop-blur-xl border border-glass-border rounded-xl shadow-glass;
+  }
+  
+  .glow-button {
+    @apply relative overflow-hidden rounded-xl px-8 py-4 font-semibold transition-all duration-300;
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+    border: 1px solid rgba(0, 191, 255, 0.3);
+  }
+  
+  .glow-button:hover {
+    @apply shadow-glow-blue scale-105;
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
+  }
+  
+  .glow-button:before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-electric/20 to-purple/20 opacity-0 transition-opacity duration-300;
+  }
+  
+  .glow-button:hover:before {
+    @apply opacity-100;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #00BFFF 0%, #39FF14 50%, #8B5CF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .algorithm-card {
+    @apply glass-panel p-6 transition-all duration-300 hover:shadow-glow-blue hover:scale-105 hover:border-electric/50 cursor-pointer;
+  }
+
+  .feature-card {
+    @apply glass-panel p-8 h-full transition-all duration-300 hover:shadow-glow-purple hover:scale-105;
+  }
+
+  .nav-blur {
+    @apply backdrop-blur-md bg-background/80 border-b border-glass-border;
+  }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}

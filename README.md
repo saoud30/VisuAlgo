@@ -125,7 +125,7 @@ Click "Visualize" and watch your algorithm execute with:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/visualgo.git
+git clone https://github.com/Saoud30/VisuAlgo.git
 
 # Navigate to project directory
 cd visualgo
@@ -212,14 +212,14 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Love VisuAlgo? Give us a star!** ⭐
 
-[![GitHub stars](https://img.shields.io/github/stars/your-username/visualgo?style=social)](https://github.com/your-username/visualgo/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/your-username/visualgo?style=social)](https://github.com/your-username/visualgo/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/your-username/visualgo?style=social)](https://github.com/Saoud30/VisuAlgo/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/your-username/visualgo?style=social)](https://github.com/Saoud30/VisuAlgo/network/members)
 
 ### Connect With Us
 
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/visualgo)
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/visualgo)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@visualgo.dev)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mohdhashimansari30@gmail.com)
 
 </div>
 
